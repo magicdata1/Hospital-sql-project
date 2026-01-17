@@ -31,7 +31,6 @@ It includes:
 - No **primary keys** → duplicates risk.  
 - No **foreign keys** → no relational integrity.  
 - Potential **orphan records** affecting reliability.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ---
 
@@ -41,7 +40,6 @@ It includes:
   `patients`, `doctors`, `appointments`, `treatments`, `billing`.  
 - Converted all ID fields to `VARCHAR(50)` for consistency.  
 - Linked tables using **FOREIGN KEYS** to enforce relationships (e.g. appointments → patients & doctors).  
-[2](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_management.sql)
 
 ---
 
@@ -51,13 +49,11 @@ It includes:
 - Converted date columns to proper **DATE** type (`STR_TO_DATE`).  
 - Converted currency to **DECIMAL(10,2)** to prevent rounding issues.  
 - Added timestamp fields like `created_at` for auditability.  
-[2](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_management.sql)
 
 ### Final ERD  
 The Entity‑Relationship Diagram (ERD) shows a full relational model linking:  
 Patients → Appointments → Treatments → Billing + Doctors.  
 This ensures accurate joins and robust analytics.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ---
 
@@ -69,19 +65,15 @@ The SQL script includes a collection of analytical queries to support hospital d
 
 ### **Peak Busy Days**
 Identifies which weekdays have the highest appointment volume to optimise staffing and room allocation.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Doctor Workload**
 Shows appointment volumes per doctor to identify workload imbalance and support recruitment.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **No‑Show Rates**
 Measures missed appointments per doctor, highlighting revenue loss and inefficiency.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Departmental Performance**
 Compares completed vs cancelled visits per specialisation.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ---
 
@@ -89,15 +81,13 @@ Compares completed vs cancelled visits per specialisation.
 
 ### **Insurance Revenue Streams**
 Ranks insurers based on number of invoices and total paid revenue.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Aging Accounts Receivable**
 Identifies unpaid bills older than 30 days for collection prioritisation.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
+
 
 ### **Treatment Profitability**
 Calculates revenue per treatment type and identifies high‑margin procedures.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ---
 
@@ -105,25 +95,16 @@ Calculates revenue per treatment type and identifies high‑margin procedures.
 
 ### **Patient Retention (Loyalty)**
 Finds frequent‑visit patients to target with personalised care management.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Age Group Segmentation**
 Categorises patients into paediatric, adult, and senior groups for clinical planning.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Gender Distribution**
 Ensures equitable staffing and department planning.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ### **Treatment Recurrence**
 Identifies repeat treatment patterns, useful for protocol improvement.  
-[1](https://b2wcompletetraining057-my.sharepoint.com/personal/smaragdialbu_bootcamp_justit_co_uk/Documents/Microsoft%20Copilot%20Chat%20Files/Hospital_SQL_Project_Full_Presentation_Smaragdi_Albu.pdf)
 
 ---
 
-# How to Use This Project
-
-1. Create a MySQL/MariaDB database:  
-   ```sql
-   CREATE DATABASE hospital_management;
-   USE hospital_management;
+## If you find this project useful or insightful, feel free to ⭐ star the repository!
